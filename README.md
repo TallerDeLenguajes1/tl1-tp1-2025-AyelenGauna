@@ -69,7 +69,7 @@ Thumbs.db  # Windows
 git rm --cached -r archivos_o_carpeta
 ```
 **IMPORTANTE:**
-Si el archivo que agregaste a .gitignore ya había sido subido antes al repositorio, Git seguirá rastreándolo. Para solucionarlo, elimínalo del índice antes de hacer commit:
+ Si el archivo que agregaste a .gitignore ya había sido subido antes al repositorio, Git seguirá rastreándolo. Para solucionarlo, elimínalo del índice antes de hacer commit:
 
 ```
 git rm --cached nombre_del_archivo
