@@ -23,85 +23,48 @@ Es útil porque:
 
 Lo ideal es crearlo antes de hacer el primer commit para evitar que Git rastree archivos que luego tendrías que eliminar. Sin embargo, si te olvidaste, puedes crearlo en cualquier momento y luego actualizar el índice de Git.
 
-### Instalación 
+### ¿Cómo configurarlo? 🛠️
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+1. **Crear el archivo** .gitignore en la raíz del proyecto: 
 
 ```
-Da un ejemplo
+touch .gitignore
+```
+O simplemente crearlo desde unedito de texto.
+
+2. **Agregar reglas dentro del** .gitignore, por ejemplo:
+
+- **Ignorar archivo específicos:**
+    _archivo.txt_
+
+- **Ignorar una carpeta completa:**
+    _/carpetaPrivada/_
+
+- **Ignorar archivos por extensión:**
+```
+*.log  # Todos los archivos .log
+*.tmp  # Archivos temporales
 ```
 
-_Y repite_
-
+- **Ignorar archivos de configuración y dependencias:**
 ```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
+.env   # Variables de entorno
+node_modules/  # Dependencias de Node.js
+vendor/  # Dependencias de PHP
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
+- **Ignorar archivos generados por el sistema:**
 ```
-Da un ejemplo
+.DS_Store  # MacOS
+Thumbs.db  # Windows
 ```
 
-## Despliegue 📦
+3. **Si ya habías subido archivos antes de agregar** .gitignore, puedes hacer que Git los deje de rastrear con:
 
-_Agrega notas adicionales sobre como hacer deploy_
+```
+git rm --cached -r archivos_o_carpeta
+```
 
-## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
