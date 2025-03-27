@@ -25,20 +25,24 @@ Lo ideal es crearlo antes de hacer el primer commit para evitar que Git rastree 
 
 ### ¿Cómo configurarlo? 🛠️
 
-1. **Crear el archivo** .gitignore en la raíz del proyecto: 
+**1. Crear el archivo** .gitignore en la raíz del proyecto: 
 
 ```
 touch .gitignore
 ```
-O simplemente crearlo desde unedito de texto.
+O simplemente crearlo desde un editor de texto.
 
-2. **Agregar reglas dentro del** .gitignore, por ejemplo:
+**2. Agregar reglas dentro del** .gitignore, por ejemplo:
 
 - **Ignorar archivo específicos:**
-    _archivo.txt_
+```
+archivo.txt
+```
 
 - **Ignorar una carpeta completa:**
-    _/carpetaPrivada/_
+``` 
+/carpetaPrivada/
+```
 
 - **Ignorar archivos por extensión:**
 ```
@@ -59,7 +63,7 @@ vendor/  # Dependencias de PHP
 Thumbs.db  # Windows
 ```
 
-3. **Si ya habías subido archivos antes de agregar** .gitignore, puedes hacer que Git los deje de rastrear con:
+**3. Si ya habías subido archivos antes de agregar** .gitignore, puedes hacer que Git los deje de rastrear con:
 
 ```
 git rm --cached -r archivos_o_carpeta
