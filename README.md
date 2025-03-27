@@ -1,29 +1,29 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kl-E8VQf)
 
-# Introducción a .gitignore
+# Introducción a .gitignore 🚀
 
-_El archivo .gitignore, es un archivo de texto que le dice a Git qué archivos o carpetas ignorar en un proyecto._
+El archivo .gitignore, es un archivo de texto que le dice a Git qué archivos o carpetas ignorar en un proyecto.
 
-_Un archivo local .gitignore generalmente se coloca en el directorio raíz de un proyecto. También puedes crear un archivo global .gitignore, y cualquier entrada en ese archivo se ignorará en todos tus repositorios de Git._
+Un archivo local .gitignore generalmente se coloca en el directorio raíz de un proyecto. También puedes crear un archivo global .gitignore, y cualquier entrada en ese archivo se ignorará en todos tus repositorios de Git.
 
-_Para crear un archivo .gitignore local, crea un archivo de texto y asígnale el nombre ".gitignore" (recuerda incluir el . al principio). Luego, edita este archivo según sea necesario. Cada nueva línea debe incluir un archivo o carpeta adicional que quieras que Git lo ignore._
+Para crear un archivo .gitignore local, crea un archivo de texto y asígnale el nombre ".gitignore" (recuerda incluir el . al principio). Luego, edita este archivo según sea necesario. Cada nueva línea debe incluir un archivo o carpeta adicional que quieras que Git lo ignore.
 
-## Comenzando 🚀
+## ¿Por qué es conveniente incluirlo? 📋
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+El archivo .gitignore le dice a Git qué archivos o carpetas **NO debe rastrear ni incluir en los commits**.
+Es útil porque:
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+- Evita subir archivos innecesarios (archivos temporales, compilados, de configuración personal).
 
+- Previene que archivos con información sensible (como contraseñas o claves de API) sean subidos por error.
 
-### Pre-requisitos 📋
+- Mantiene el repositorio limpio y organizado.
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+### ¿Cuándo se debe hacer? 🔧
 
-```
-Da un ejemplo
-```
+Lo ideal es crearlo antes de hacer el primer commit para evitar que Git rastree archivos que luego tendrías que eliminar. Sin embargo, si te olvidaste, puedes crearlo en cualquier momento y luego actualizar el índice de Git.
 
-### Instalación 🔧
+### Instalación 
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
