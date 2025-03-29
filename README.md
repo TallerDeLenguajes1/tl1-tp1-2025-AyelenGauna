@@ -87,7 +87,7 @@ printf("Lo que contiene de dato el puntero: %p\n", pnumero);
 printf("La direccion de memoria de la vble numero: %p\n", &numero);
 ```
 
-Ambas líneas imprimen la **misma dirección de memoria** porque:
+✅ Ambas líneas imprimen la **misma dirección de memoria** porque:
 - *pnumero* almacena la dirección de *numero* (*pnumero = &numero;*).
 - *&numero* obtiene la dirección de *numero*.
 
@@ -96,5 +96,9 @@ Ambas líneas imprimen la **misma dirección de memoria** porque:
 ## ¿Qué se obtiene en esta línea? ¿Es igual a los anteriores? ¿Por qué?
 
 ```
-printf("Lo que contiene de dato la vble numero: %d\n", numero);
+printf("La que dirección de memoria del puntero: %p\n", &pnumero);
 ```
+
+- *&pnumero* obtiene la dirección de memoria donde se almacena el puntero *pnumero*.
+- Como *pnumero* es una variable independiente en memoria, su dirección es diferente de *&numero*.
+- No es igual a las líneas anteriores porque *&pnumero* es la dirección del puntero en sí, mientras que las líneas 11 y 12 imprimen la dirección de *numero*.
