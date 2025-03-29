@@ -10,7 +10,7 @@ int main() {
     printf("\nIngrese un numero para saber su cuadrado: ");
     scanf("%d",&num1);
 
-    printf("\nSu cuadrado es: %d", cuadrado(num1));
+    printf("\nSu cuadrado es: %d\n", cuadrado(num1));
 
     printf("\nIngrese otro numero para saber su cuadrado: ");
     scanf("%d",&num2);
@@ -25,7 +25,8 @@ int cuadrado(int n){
 }
 
 void cuadradoVoid(int n){ //c) Al recibir una variable muestre por pantalla la dirección y el contenido de la variable
-    printf("\nSu cuadrado es: %d", pow(n,2));
+    int r = pow(n,2);
+    printf("\nSu cuadrado es: %d", r);
     printf("\nEl contenido de la variable: %d", n);
     printf("\nSu direccion de memoria: %p", &n);
 }
