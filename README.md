@@ -76,4 +76,25 @@ git rm --cached nombre_del_archivo
 git commit -m "Ignorar nombre_del_archivo"
 git push origin main
 ```
-Después de esto, Git dejará de rastrear el archivo, pero seguirá existiendo en tu máquina local. 
+Después de esto, Git dejará de rastrear el archivo, pero seguirá existiendo en tu máquina local.
+
+# Analizando el código del archivo tp1_1.c
+
+## ¿Por qué ambas líneas imprimen el mismo valor
+
+```
+printf("Lo que contiene de dato el puntero: %p\n", pnumero);
+printf("La direccion de memoria de la vble numero: %p\n", &numero);
+```
+
+Ambas líneas imprimen la **misma dirección de memoria** porque:
+- *pnumero* almacena la dirección de *numero* (*pnumero = &numero;*).
+- *&numero* obtiene la dirección de *numero*.
+
+💡 **Conclusión:** Un puntero almacena una dirección de memoria, por lo que *pnumero* y *&numero* contienen el mismo valor.
+
+## ¿Qué se obtiene en esta línea? ¿Es igual a los anteriores? ¿Por qué?
+
+```
+printf("Lo que contiene de dato la vble numero: %d\n", numero);
+```
